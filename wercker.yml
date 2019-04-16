@@ -1,0 +1,13 @@
+#Use OpenJDK
+box:
+ id: openjdk8
+  posrts:
+  -8080
+  
+  bulid:
+  steps:
+   - install-packages:
+   packages:maven
+   - script:
+   name: maven build
+   code: mvn clean assembly: assembly
